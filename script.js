@@ -9,6 +9,8 @@ libraryWrapper = document.querySelector('.library-wrapper');
 let myLibrary = JSON.parse(localStorage.getItem("library"));
 myLibrary = myLibrary === null ? [] : myLibrary;
 
+const noBooks = document.querySelector("#no-books");
+
 render();
 
 const form = document.querySelector('.form');
@@ -26,9 +28,8 @@ document.getElementById('book-add').addEventListener('click', function (e) {
     submitBook(e);
     resetForm();
     saveBook();
+    showForm();
 });
-
-
 
 function showForm() {
     
@@ -107,6 +108,11 @@ function saveBook() {
 
 }
 function render() {
+    if (myLibrary.length == 0) {
+        noBooks.style = "display: flex";
+    } else {
+        noBooks.style = "display: none";
+    }
     clearElements();
     for (let book of myLibrary) {
         console.log("title: " + book.title);
