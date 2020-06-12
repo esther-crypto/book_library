@@ -12,6 +12,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  align-items: center;
   text-transform: uppercase;
   background-color: rgb(212, 211, 211);
    padding: 0 20px 0 20px;
@@ -121,6 +122,10 @@ header {
   .library-wrapper{
     display: flex;
     flex-direction: column;
+    margin: 20px;
+  }
+  .book-wrapper{
+    margin: 20px;
   }
 }
 .book-wrapper {
