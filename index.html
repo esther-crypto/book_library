@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-title">
+        <p>Library</p>
+      </div>
+      <div class="header-btn">
+        <button id="btn-add-new" class="btn-add"><i class="fa fa-plus fa-3x icon"></i></button>
+      </div>
+      
+    </header>
+    <section>
+        <div class="form">
+        
+            <form action="" class="form-details" id="form-book">
+              <div class="form-input">
+                <div class="input">
+                  <label for="title" class="title-label">title</label>
+                  <input type="text" id="title"  class="title" />
+                </div>
+                <div class="input">
+                  <label for="author"  class="label-author">author</label>
+                  <input type="text" id="author" class="author" />
+                </div>
+                <div class="input">
+                  <label for="pages" class="label-pages">pages</label>
+                  <input type="number"id="pages"  class="pages" />
+                </div>
+                <div class="radio-check input">
+                  <label for="radio-buttons">Is the book read?</label>
+                  <div class="radio-wrapper">
+                    <input type="radio" class="radio" id="radio" value="yes" name="choice"/>yes <br />
+                    <input type="radio" class="radio" id="radio" value="no" name="choice"/>no
+                  </div>
+                </div>
+                <div class="add-btn">
+                  <input type="submit" id="book-add" class="book-add" value="add">
+                  <input type="button" id="cancel" class="cancel" value="cancel">
+                 
+                </div>
+              </div>
+            </form>
+          </div>
+    </section>
+    <section class="library-wrapper">
+      <div class="book-wrapper">
+
+
+      </div>
+   
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
